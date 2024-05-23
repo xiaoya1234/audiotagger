@@ -1,4 +1,5 @@
 package org.xiaoya.util;
 
-public interface AudioFile {
+public class AudioFile {
+
 }

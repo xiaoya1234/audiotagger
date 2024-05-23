@@ -1,7 +1,7 @@
 package org.xiaoya.util;
 
-import org.xiaoya.audio.mp3.MP3File;
+import java.io.FileNotFoundException;
 
-public interface FileReader {
-    MP3File read();
+public class FileReader {
+
 }

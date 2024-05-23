@@ -9,7 +9,6 @@ public enum FieldKey {
     TRACK,
     GENRE,
     LYRIC,
-    IMG,
     SIZE,
     YEAR
 }

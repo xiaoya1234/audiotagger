@@ -1,4 +1,7 @@
 package org.xiaoya.audio.mp3;
 
-public class MP3AudioHeader {
+import org.xiaoya.util.AudioHeader;
+
+public class MP3AudioHeader implements AudioHeader {
+
 }
