@@ -1,4 +1,7 @@
+import org.xiaoya.audio.mp3.MP3AudioHeader;
 import org.xiaoya.util.constant.enums.ID3V1TagEnum;
+
+import java.io.File;
 
 public class Text {
     public static void main(String[] args) {
@@ -30,5 +33,7 @@ public class Text {
                 return new CommentEnum(126,1);
             }
         },*/
+        File file=new File("C:\\Users\\xiaoya\\Desktop\\fanbianyi\\格子兮 - 西塘有雨 [mqms2].mp3");
+        MP3AudioHeader mp3AudioHeader = new MP3AudioHeader(file);
     }
 }

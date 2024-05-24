@@ -1,14 +1,14 @@
 package org.xiaoya.util.constant.enums;
 
-import static org.xiaoya.util.constant.consist.ID3Consist.ID3V1_HEADER_LENGTH;
+import static org.xiaoya.util.constant.consist.ID3Consist.ID3V1_HEADER_LENGTH_30;
 
 public enum ID3V1TagEnum {
     TAG(0,3),
-    TITLE(3, ID3V1_HEADER_LENGTH),
-    ARTIST(33,ID3V1_HEADER_LENGTH),
-    ALBUM(63,ID3V1_HEADER_LENGTH),
+    TITLE(3, ID3V1_HEADER_LENGTH_30),
+    ARTIST(33,ID3V1_HEADER_LENGTH_30),
+    ALBUM(63,ID3V1_HEADER_LENGTH_30),
     YEAR(93,4),
-    COMMENT(97,ID3V1_HEADER_LENGTH),
+    COMMENT(97,ID3V1_HEADER_LENGTH_30),
     GENRE(127,1);
     private final int start;
     private final int length;
