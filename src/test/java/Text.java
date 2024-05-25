@@ -1,10 +1,8 @@
-import org.xiaoya.audio.mp3.MP3AudioHeader;
-import org.xiaoya.util.constant.enums.ID3V1TagEnum;
-
 import java.io.File;
+import java.io.FileNotFoundException;
 
 public class Text {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         /*Comment1(97,28){
             //Reserved(125,1)
@@ -34,6 +32,6 @@ public class Text {
             }
         },*/
         File file=new File("C:\\Users\\xiaoya\\Desktop\\fanbianyi\\格子兮 - 西塘有雨 [mqms2].mp3");
-        MP3AudioHeader mp3AudioHeader = new MP3AudioHeader(file);
+
     }
 }

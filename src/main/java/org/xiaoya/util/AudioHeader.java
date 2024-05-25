@@ -12,15 +12,23 @@ public class AudioHeader {
     private ByteBuffer byteBuffer;
     private RandomAccessFile rand;
     private FileChannel fChannel;
+
     public AudioHeader(File file) throws FileNotFoundException {
-        this.file=file;
+        this.file = file;
         init();
     }
+
     private void init() throws FileNotFoundException {
-        rand=new RandomAccessFile(file,"rw");
-        fChannel=rand.getChannel();
+        try {
+            rand = new RandomAccessFile(file, "rw");
+            fChannel = rand.getChannel();
+        } catch (FileNotFoundException e) {
+            throw new FileNotFoundException("文件为空！");
+        }
+
     }
-    public AudioFile read(){
+
+    public AudioFile read() {
         return null;
     }
 
@@ -43,12 +51,17 @@ public class AudioHeader {
     public void setByteBuffer(ByteBuffer byteBuffer) {
         this.byteBuffer = byteBuffer;
     }
+
     public void close() throws IOException {
-        if (rand!=null){
-            rand.close();
-        }
-        if (fChannel!=null){
-            fChannel.close();
+        try {
+            if (rand != null) {
+                rand.close();
+            }
+            if (fChannel != null) {
+                fChannel.close();
+            }
+        } catch (IOException e) {
+            throw new IOException("IO异常！");
         }
     }
 }
