@@ -1,4 +1,4 @@
-package org.xiaoya.util.constant.consist;
+package org.xiaoya.constant.consist;
 
 
 public class ID3Consist {

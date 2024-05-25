@@ -1,4 +1,6 @@
-package org.xiaoya.util;
+package org.xiaoya.main;
+
+import org.xiaoya.main.AudioFile;
 
 import java.io.File;
 import java.io.FileNotFoundException;

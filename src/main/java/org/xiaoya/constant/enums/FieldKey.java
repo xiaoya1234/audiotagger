@@ -1,4 +1,4 @@
-package org.xiaoya.util.constant.enums;
+package org.xiaoya.constant.enums;
 
 public enum FieldKey {
     TITLE,

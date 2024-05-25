@@ -1,6 +1,6 @@
-package org.xiaoya.util.constant.enums.mp3;
+package org.xiaoya.constant.enums.mp3;
 
-import static org.xiaoya.util.constant.consist.ID3Consist.ID3V1_HEADER_LENGTH_30;
+import static org.xiaoya.constant.consist.ID3Consist.ID3V1_HEADER_LENGTH_30;
 
 public enum ID3V1TagHeaderEnum {
     TAG(0,3),

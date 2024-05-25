@@ -1,7 +1,7 @@
 package org.xiaoya.audio.mp3;
 
-import org.xiaoya.util.AudioFile;
-import org.xiaoya.util.AudioHeader;
+import org.xiaoya.main.AudioFile;
+import org.xiaoya.main.AudioHeader;
 
 import java.io.File;
 import java.io.FileNotFoundException;
